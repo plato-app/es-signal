@@ -1,0 +1,11 @@
+{
+	"name": "signal",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"build": "tsc"
+	},
+	"devDependencies": {
+		"typescript": "^2.3.4"
+	}
+}

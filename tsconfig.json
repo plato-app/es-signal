@@ -3,16 +3,12 @@
 		"target": "es5",
 		"lib": ["es6"],
 		"module": "commonjs",
-		"noImplicitAny": true,
+		"strict": true,
 		"removeComments": true,
-		"preserveConstEnums": true,
-		"outDir": ".",
+		"outDir": "dist",
 		"declaration": true
 	},
 	"include": [
-		"lib/**/*"
-	],
-	"exclude": [
-		"node_modules"
+		"lib/**/*.ts"
 	]
 }

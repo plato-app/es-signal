@@ -6,9 +6,12 @@
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"scripts": {
-		"build": "tsc"
+		"build": "tsc",
+		"lint": "tslint -c tslint.json 'lib/**/*.ts'"
 	},
 	"devDependencies": {
+		"@plato/tslint-config": "git+ssh://git@git.playchat.net:playchat/tslint-config.git#^1.0.0",
+		"tslint": "^5.9.1",
 		"typescript": "^2.6.2"
 	}
 }

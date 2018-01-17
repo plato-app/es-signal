@@ -1,0 +1,3 @@
+{
+	"extends": "@plato/tslint-config"
+}

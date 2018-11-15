@@ -1,10 +1,19 @@
 {
 	"name": "@plato/signal",
 	"version": "1.0.0",
+	"description": "A signal is a specific event to which observers can subscribe to receive.",
+	"keywords": [
+		"plato",
+		"signal",
+		"emitter"
+	],
 	"license": "UNLICENSED",
-	"private": true,
+	"author": "Geoff Blair <geoff@platoteam.com>",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"build": "tsc",
 		"lint": "tslint -c tslint.json 'lib/**/*.ts'",

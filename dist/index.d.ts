@@ -1,4 +1,4 @@
-export declare type SignalReceiver = () => void;
+export declare type SignalReceiver = (...args: any[]) => void;
 export declare class Signal {
     private receivers;
     receive(receiver: SignalReceiver): void;

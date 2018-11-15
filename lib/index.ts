@@ -1,5 +1,5 @@
 /** Generic receiver callback */
-export type SignalReceiver = () => void;
+export type SignalReceiver = (...args: any[]) => void;
 
 /**
  * Signal emitter

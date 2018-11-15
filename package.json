@@ -12,6 +12,6 @@
 	"devDependencies": {
 		"@plato/tslint-config": "git+ssh://git@git.playchat.net:playchat/tslint-config.git#^1.0.0",
 		"tslint": "^5.11.0",
-		"typescript": "^2.6.2"
+		"typescript": "^3.1.0"
 	}
 }

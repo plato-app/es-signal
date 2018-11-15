@@ -1,1 +1,1 @@
-cmd: yarn run build
+cmd: yarn lint && yarn build

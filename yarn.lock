@@ -2,9 +2,10 @@
 # yarn lockfile v1
 
 
-"@plato/tslint-config@git+ssh://git@git.playchat.net:playchat/tslint-config.git#^1.0.0":
-  version "1.0.0"
-  resolved "git+ssh://git@git.playchat.net:playchat/tslint-config.git#ee6f176fc00e72ec4de3235ef9fe1ee41f9778cb"
+"@plato/tslint-config@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@plato/tslint-config/-/tslint-config-1.3.0.tgz#642c617f98295b5f66c31f6ce602171a6c63a5a1"
+  integrity sha512-neQY5VbjBINtPNMC5Z9af1O6pRBI/aINayeJ5lp8PHBi+WfVP3uAnw5+u3DYIW+1UXqzKr1izqeVEZmeuDiWag==
 
 ansi-regex@^2.0.0:
   version "2.1.1"

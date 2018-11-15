@@ -22,7 +22,7 @@ export class Signal {
 	 * @param receiver Signal receiving callback function
 	 */
 	public ignore(receiver: SignalReceiver) {
-		let index = this.receivers.indexOf(receiver);
+		const index = this.receivers.indexOf(receiver);
 		if (index !== -1) {
 			this.receivers.splice(index, 1);
 		}
@@ -40,7 +40,7 @@ export class Signal {
 	 * @param args Arguments passed to receivers of this signal
 	 */
 	public emit(...args: any[]) {
-		for (let receiver of this.receivers) {
+		for (const receiver of this.receivers) {
 			receiver(...args);
 		}
 	}

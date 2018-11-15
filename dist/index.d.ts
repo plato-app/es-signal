@@ -1,7 +1,8 @@
+export declare type SignalReceiver = () => void;
 export declare class Signal {
     private receivers;
-    receive(receiver: Function): void;
-    ignore(receiver: Function): void;
+    receive(receiver: SignalReceiver): void;
+    ignore(receiver: SignalReceiver): void;
     purge(): void;
     emit(...args: any[]): void;
 }

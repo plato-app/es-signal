@@ -10,5 +10,6 @@
 	},
 	"include": [
 		"lib/**/*.ts"
-	]
+	],
+	"compileOnSave": true
 }

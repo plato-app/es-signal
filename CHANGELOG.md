@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0
+
+* Allow typed receivers
+
 ## 1.1.0
 
 * Add `SignalReceiver`

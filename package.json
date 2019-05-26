@@ -17,6 +17,7 @@
 	"scripts": {
 		"build": "tsc",
 		"lint": "tslint -c tslint.json 'lib/**/*.ts'",
+		"prepublish": "yarn lint && yarn build",
 		"test": "tape 'tests/**/*.js'"
 	},
 	"devDependencies": {

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.1
+
+* Add default type parameter of `SignalReceiver` to `Signal`
+
 ## 1.2.0
 
 * Allow typed receivers

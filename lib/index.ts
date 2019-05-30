@@ -4,7 +4,7 @@ export type SignalReceiver = (...args: any[]) => void;
 /**
  * Signal emitter
  */
-export class Signal<R extends SignalReceiver> {
+export class Signal<R extends SignalReceiver = SignalReceiver> {
 
 	/** Receivers */
 	private receivers: R[] = [];

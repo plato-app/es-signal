@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.0
+
+* Add `Signal.receiverCount` property
+
 ## 1.2.1
 
 * Add default type parameter of `SignalReceiver` to `Signal`

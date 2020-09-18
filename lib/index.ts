@@ -1,13 +1,16 @@
 /** Generic receiver callback */
 export type SignalReceiver = (...args: any[]) => void;
 
-/**
- * Signal emitter
- */
+/** Signal emitter */
 export class Signal<R extends SignalReceiver = SignalReceiver> {
 
 	/** Receivers */
-	private receivers: R[] = [];
+	private readonly receivers: R[] = [];
+
+	/** Number of receivers for this signal */
+	public get receiverCount(): number {
+		return this.receivers.length;
+	}
 
 	/**
 	 * Attaches a receiver to this signal
@@ -28,9 +31,7 @@ export class Signal<R extends SignalReceiver = SignalReceiver> {
 		}
 	}
 
-	/**
-	 * Detaches ALL receivers from this signal
-	 */
+	/** Detaches ALL receivers from this signal */
 	public purge() {
 		this.receivers.length = 0;
 	}

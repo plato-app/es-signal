@@ -2,7 +2,7 @@ const tape = require("tape");
 const { Signal } = require("../dist");
 
 tape("receive", (t) => {
-	t.plan(2);
+	t.plan(3);
 
 	const sig = new Signal();
 
@@ -10,6 +10,8 @@ tape("receive", (t) => {
 		t.equal(a, 10);
 		t.equal(b, 20);
 	});
+
+	t.equal(sig.receiverCount, 1);
 
 	sig.emit(10, 20);
 });

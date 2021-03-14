@@ -1,7 +1,7 @@
-const tape = require("tape");
-const { Signal } = require("../dist/cjs");
+import * as tape from "tape";
+import { Signal } from "../lib";
 
-tape("receive", (t) => {
+tape("Signal.receive", (t) => {
 	t.plan(3);
 
 	const sig = new Signal();
@@ -16,7 +16,7 @@ tape("receive", (t) => {
 	sig.emit(10, 20);
 });
 
-tape("ignore", (t) => {
+tape("Signal.ignore", (t) => {
 	const sig = new Signal();
 
 	const rec = () => {
@@ -30,7 +30,7 @@ tape("ignore", (t) => {
 	t.end();
 });
 
-tape("purge", (t) => {
+tape("Signal.purge", (t) => {
 	const sig = new Signal();
 
 	sig.receive(() => {

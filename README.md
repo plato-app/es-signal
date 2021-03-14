@@ -1,6 +1,6 @@
 # @plato/signal
 
-[![Node.js CI](https://github.com/plato-app/es-signal/actions/workflows/node.yml/badge.svg)](https://github.com/plato-app/es-signal/actions/workflows/node.yml)
+[![Node.js CI](https://github.com/plato-app/es-signal/actions/workflows/node.yml/badge.svg)](https://github.com/plato-app/es-signal/actions/workflows/node.yml) [![npm version](https://badge.fury.io/js/%40plato%2Fsignal.svg)](https://badge.fury.io/js/%40plato%2Fsignal)
 
 A `Signal` is a specific event to which observers can subscribe to receive, with strong typing.
 

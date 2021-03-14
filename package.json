@@ -33,6 +33,9 @@
 		"typedoc": "^0.20.32",
 		"typescript": "^4.2.3"
 	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"eslintConfig": {
 		"extends": "@plato/eslint-config-ts"
 	}

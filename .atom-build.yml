@@ -1,1 +1,0 @@
-cmd: yarn lint && yarn build

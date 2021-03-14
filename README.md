@@ -2,6 +2,8 @@
 
 A `Signal` is a specific event to which observers can subscribe to receive, with strong typing.
 
+See the [API reference](https://plato-app.github.io/es-signal/) for more information.
+
 ## Why?
 
 Instead of an inheritable class (like Node's `EventEmitter`), this library promotes [composition over inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance).

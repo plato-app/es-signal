@@ -1,5 +1,5 @@
 const tape = require("tape");
-const { Signal } = require("../dist");
+const { Signal } = require("../dist/cjs");
 
 tape("receive", (t) => {
 	t.plan(3);

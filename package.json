@@ -10,15 +10,17 @@
 	],
 	"license": "UNLICENSED",
 	"author": "Geoff Blair <geoff@platoteam.com>",
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
+	"main": "dist/cjs/index.js",
+	"types": "dist/types/index.d.ts",
+	"module": "dist/es/index.js",
 	"files": [
 		"dist"
 	],
 	"scripts": {
-		"build": "tsc",
+		"build": "tsc && tsc -p tsconfig-cjs.json",
+		"clean": "rm -rf dist",
 		"lint": "tslint -c tslint.json 'lib/**/*.ts'",
-		"prepublish": "yarn lint && yarn build",
+		"prepublish": "yarn lint && yarn clean && yarn build",
 		"test": "tape 'tests/**/*.js'"
 	},
 	"devDependencies": {

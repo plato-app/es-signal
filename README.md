@@ -1,32 +1,34 @@
 # @plato/signal
 
-A signal is a specific event to which observers can subscribe to receive.
+A `Signal` is a specific event to which observers can subscribe to receive, with strong typing.
 
-Instead of an inheritable class (like Node's `EventEmitter`), this object is meant to be created for each distinct signal which is emitted.
+## Why?
+
+Instead of an inheritable class (like Node's `EventEmitter`), this library promotes [composition over inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance).
 
 ## Usage
 
 ```ts
 import { Signal } from "@plato/signal";
 
-const onMessage = new Signal();
+const onPing = new Signal();
 
-onMessage.receive((message: string) => {
-	// TODO: Do something with "message"
+onPing.receive(() => {
+	// Received the "onPing" signal
 });
 
-onMessage.emit("Hello Plato!");
+onPing.emit();
 ```
 
-By default, Receivers have a generic type of `(...args: any[]) => void`. However, you can strongly type receivers by passing a type variable when constructing a `Signal`:
+By default, a `SignalReceiver` will have a generic type of `(...args: any[]) => void`. However, you can strongly type receivers by passing a type variable when constructing a `Signal`:
 
 ```ts
 // Create a signal with a strongly typed receiver
 const onMessage = new Signal<(message: string) => void>();
 
-onMessage.receive((message) => { // <-- Type inference
-  // TODO: Do something with "message"
+onMessage.receive((message) => {
+  // TODO: Do something with "message", which is a string
 });
 
-onMessage.emit("Hello Plato!"); // <-- Strongly typed
+onMessage.emit("Hello Plato!");
 ```

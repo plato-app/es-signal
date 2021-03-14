@@ -5,7 +5,8 @@
 	"keywords": [
 		"plato",
 		"signal",
-		"emitter"
+		"emitter",
+		"event"
 	],
 	"license": "UNLICENSED",
 	"author": "Geoff Blair <geoff@platoteam.com>",

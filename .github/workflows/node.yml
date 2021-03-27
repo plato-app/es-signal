@@ -10,25 +10,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: 🛎️ Checkout
+      - name: Checkout
       - uses: actions/checkout@v2
 
-      - name: 🔧 Install and Audit
+      - name: Install and Audit
         run: yarn && yarn audit
 
-      - name: 🚨 Lint
+      - name: Lint
         run: yarn lint
 
-      - name: 🏗 Build
+      - name: Build
         run: yarn clean && yarn build
 
-      - name: ✅ Test
+      - name: Test
         run: yarn test
 
-      - name: 📝 Document
+      - name: Document
         run: yarn doc
 
-      - name: 🚀 Deploy
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
           branch: gh-pages
